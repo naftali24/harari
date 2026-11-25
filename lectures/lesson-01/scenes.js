@@ -1,0 +1,625 @@
+window.lessonScenes = [
+  {
+    "id": "lecture-01-01",
+    "start": 0,
+    "title": "פתיחה והסבר על הקורס",
+    "image": "images/lecture-01-01 - פתיחה והסבר על הקורס.webp",
+    "prompt": "פתיחה והסבר על הקורס — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-02",
+    "start": 387,
+    "title": "מטרת לימוד ההיסטוריה",
+    "image": "images/lecture-01-02 - מטרת לימוד ההיסטוריה.webp",
+    "prompt": "מטרת לימוד ההיסטוריה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-03",
+    "start": 555,
+    "title": "המפץ הגדול",
+    "image": "images/lecture-01-03 - המפץ הגדול.webp",
+    "prompt": "המפץ הגדול — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-04",
+    "start": 574,
+    "title": "היווצרות האטומים",
+    "image": "images/lecture-01-04 - היווצרות האטומים.webp",
+    "prompt": "היווצרות האטומים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-05",
+    "start": 597,
+    "title": "הופעת החיים",
+    "image": "images/lecture-01-05 - הופעת החיים.webp",
+    "prompt": "הופעת החיים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-06",
+    "start": 624,
+    "title": "הופעת התרבות האנושית",
+    "image": "images/lecture-01-06 - הופעת התרבות האנושית.webp",
+    "prompt": "הופעת התרבות האנושית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-07",
+    "start": 658,
+    "title": "מפיזיקה להיסטוריה",
+    "image": "images/lecture-01-07 - מפיזיקה להיסטוריה.webp",
+    "prompt": "מפיזיקה להיסטוריה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-08",
+    "start": 729,
+    "title": "שלוש המהפכות",
+    "image": "images/lecture-01-08 - שלוש המהפכות.webp",
+    "prompt": "שלוש המהפכות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-09",
+    "start": 756,
+    "title": "המהפכה הלשונית",
+    "image": "images/lecture-01-09 - המהפכה הלשונית.webp",
+    "prompt": "המהפכה הלשונית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-10",
+    "start": 785,
+    "title": "המהפכה החקלאית",
+    "image": "images/lecture-01-10 - המהפכה החקלאית.webp",
+    "prompt": "המהפכה החקלאית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-11",
+    "start": 816,
+    "title": "המהפכה המדעית",
+    "image": "images/lecture-01-11 - המהפכה המדעית.webp",
+    "prompt": "המהפכה המדעית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-12",
+    "start": 892,
+    "title": "האדם הקדמון",
+    "image": "images/lecture-01-12 - האדם הקדמון.webp",
+    "prompt": "האדם הקדמון — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-13",
+    "start": 1012,
+    "title": "הגדרת מין ביולוגי",
+    "image": "images/lecture-01-13 - הגדרת מין ביולוגי.webp",
+    "prompt": "הגדרת מין ביולוגי — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-14",
+    "start": 1074,
+    "title": "סוגים ומשפחות",
+    "image": "images/lecture-01-14 - סוגים ומשפחות.webp",
+    "prompt": "סוגים ומשפחות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-15",
+    "start": 1160,
+    "title": "משפחת האדם",
+    "image": "images/lecture-01-15 - משפחת האדם.webp",
+    "prompt": "משפחת האדם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-16",
+    "start": 1285,
+    "title": "מיני האדם השונים",
+    "image": "images/lecture-01-16 - מיני האדם השונים.webp",
+    "prompt": "מיני האדם השונים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-17",
+    "start": 1328,
+    "title": "הומו הביליס",
+    "image": "images/lecture-01-17 - הומו הביליס.webp",
+    "prompt": "הומו הביליס — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-18",
+    "start": 1340,
+    "title": "היציאה מאפריקה",
+    "image": "images/lecture-01-18 - היציאה מאפריקה.webp",
+    "prompt": "היציאה מאפריקה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-19",
+    "start": 1383,
+    "title": "האדם הניאנדרטלי",
+    "image": "images/lecture-01-19 - האדם הניאנדרטלי.webp",
+    "prompt": "האדם הניאנדרטלי — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-20",
+    "start": 1430,
+    "title": "האדם מג׳אווה",
+    "image": "images/lecture-01-20 - האדם מג׳אווה.webp",
+    "prompt": "האדם מג׳אווה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-21",
+    "start": 1452,
+    "title": "האדם מפלורס",
+    "image": "images/lecture-01-21 - האדם מפלורס.webp",
+    "prompt": "האדם מפלורס — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-22",
+    "start": 1490,
+    "title": "האדם הדניסובי",
+    "image": "images/lecture-01-22 - האדם הדניסובי.webp",
+    "prompt": "האדם הדניסובי — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-23",
+    "start": 1529,
+    "title": "השוואת מיני האדם",
+    "image": "images/lecture-01-23 - השוואת מיני האדם.webp",
+    "prompt": "השוואת מיני האדם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-24",
+    "start": 1583,
+    "title": "עץ האבולוציה האנושית",
+    "image": "images/lecture-01-24 - עץ האבולוציה האנושית.webp",
+    "prompt": "עץ האבולוציה האנושית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-25",
+    "start": 1694,
+    "title": "הומו סאפיינס כמין יחיד",
+    "image": "images/lecture-01-25 - הומו סאפיינס כמין יחיד.webp",
+    "prompt": "הומו סאפיינס כמין יחיד — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-26",
+    "start": 1766,
+    "title": "המאפיינים המשותפים למיני האדם",
+    "image": "images/lecture-01-26 - המאפיינים המשותפים למיני האדם.webp",
+    "prompt": "המאפיינים המשותפים למיני האדם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-27",
+    "start": 1800,
+    "title": "המוח האנושי הגדול",
+    "image": "images/lecture-01-27 - המוח האנושי הגדול.webp",
+    "prompt": "המוח האנושי הגדול — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-28",
+    "start": 1868,
+    "title": "השוואת גודל המוח ביונקים",
+    "image": "images/lecture-01-28 - השוואת גודל המוח ביונקים.webp",
+    "prompt": "השוואת גודל המוח ביונקים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-29",
+    "start": 1939,
+    "title": "החסרונות של מוח גדול",
+    "image": "images/lecture-01-29 - החסרונות של מוח גדול.webp",
+    "prompt": "החסרונות של מוח גדול — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-30",
+    "start": 1962,
+    "title": "צריכת האנרגיה של המוח",
+    "image": "images/lecture-01-30 - צריכת האנרגיה של המוח.webp",
+    "prompt": "צריכת האנרגיה של המוח — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-31",
+    "start": 1996,
+    "title": "החיפוש המתמיד אחר מזון",
+    "image": "images/lecture-01-31 - החיפוש המתמיד אחר מזון.webp",
+    "prompt": "החיפוש המתמיד אחר מזון — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-32",
+    "start": 2026,
+    "title": "המוח של התינוק",
+    "image": "images/lecture-01-32 - המוח של התינוק.webp",
+    "prompt": "המוח של התינוק — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-33",
+    "start": 2051,
+    "title": "המוח מול כוח השרירים",
+    "image": "images/lecture-01-33 - המוח מול כוח השרירים.webp",
+    "prompt": "המוח מול כוח השרירים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-34",
+    "start": 2118,
+    "title": "הליכה על שתי רגליים",
+    "image": "images/lecture-01-34 - הליכה על שתי רגליים.webp",
+    "prompt": "הליכה על שתי רגליים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-35",
+    "start": 2187,
+    "title": "הקושי בלידה האנושית",
+    "image": "images/lecture-01-35 - הקושי בלידה האנושית.webp",
+    "prompt": "הקושי בלידה האנושית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-36",
+    "start": 2263,
+    "title": "לידת תינוק בלתי בשל",
+    "image": "images/lecture-01-36 - לידת תינוק בלתי בשל.webp",
+    "prompt": "לידת תינוק בלתי בשל — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-37",
+    "start": 2299,
+    "title": "תינוק האדם לעומת גורי חיות",
+    "image": "images/lecture-01-37 - תינוק האדם לעומת גורי חיות.webp",
+    "prompt": "תינוק האדם לעומת גורי חיות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-38",
+    "start": 2372,
+    "title": "התפתחות המשפחה והחברה",
+    "image": "images/lecture-01-38 - התפתחות המשפחה והחברה.webp",
+    "prompt": "התפתחות המשפחה והחברה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-39",
+    "start": 2408,
+    "title": "חינוך ועיצוב האדם",
+    "image": "images/lecture-01-39 - חינוך ועיצוב האדם.webp",
+    "prompt": "חינוך ועיצוב האדם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-40",
+    "start": 2511,
+    "title": "התפתחות כף היד",
+    "image": "images/lecture-01-40 - התפתחות כף היד.webp",
+    "prompt": "התפתחות כף היד — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-41",
+    "start": 2576,
+    "title": "כלי האבן הראשונים",
+    "image": "images/lecture-01-41 - כלי האבן הראשונים.webp",
+    "prompt": "כלי האבן הראשונים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-42",
+    "start": 2592,
+    "title": "האוסטרלופיתקוס",
+    "image": "images/lecture-01-42 - האוסטרלופיתקוס.webp",
+    "prompt": "האוסטרלופיתקוס — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-43",
+    "start": 2705,
+    "title": "האדם הקדמון כיצור שולי",
+    "image": "images/lecture-01-43 - האדם הקדמון כיצור שולי.webp",
+    "prompt": "האדם הקדמון כיצור שולי — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-44",
+    "start": 2767,
+    "title": "האדם כטרף לטורפים",
+    "image": "images/lecture-01-44 - האדם כטרף לטורפים.webp",
+    "prompt": "האדם כטרף לטורפים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-45",
+    "start": 2829,
+    "title": "פיצוח עצמות ואכילת מוח עצם",
+    "image": "images/lecture-01-45 - פיצוח עצמות ואכילת מוח עצם.webp",
+    "prompt": "פיצוח עצמות ואכילת מוח עצם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-46",
+    "start": 2856,
+    "title": "התמחות בעלי החיים בטבע",
+    "image": "images/lecture-01-46 - התמחות בעלי החיים בטבע.webp",
+    "prompt": "התמחות בעלי החיים בטבע — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-47",
+    "start": 2961,
+    "title": "האדם בשרשרת המזון",
+    "image": "images/lecture-01-47 - האדם בשרשרת המזון.webp",
+    "prompt": "האדם בשרשרת המזון — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-48",
+    "start": 3004,
+    "title": "המעבר לציד בעלי חיים גדולים",
+    "image": "images/lecture-01-48 - המעבר לציד בעלי חיים גדולים.webp",
+    "prompt": "המעבר לציד בעלי חיים גדולים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-49",
+    "start": 3180,
+    "title": "ביות האש",
+    "image": "images/lecture-01-49 - ביות האש.webp",
+    "prompt": "ביות האש — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-50",
+    "start": 3266,
+    "title": "שימושי האש ועיצוב הסביבה",
+    "image": "images/lecture-01-50 - שימושי האש ועיצוב הסביבה.webp",
+    "prompt": "שימושי האש ועיצוב הסביבה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-51",
+    "start": 3344,
+    "title": "מהפכת הבישול",
+    "image": "images/lecture-01-51 - מהפכת הבישול.webp",
+    "prompt": "מהפכת הבישול — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-52",
+    "start": 3505,
+    "title": "השפעת הבישול על המעיים והמוח",
+    "image": "images/lecture-01-52 - השפעת הבישול על המעיים והמוח.webp",
+    "prompt": "השפעת הבישול על המעיים והמוח — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-53",
+    "start": 3600,
+    "title": "הבישול וגדילת המוח",
+    "image": "images/lecture-01-53 - הבישול וגדילת המוח.webp",
+    "prompt": "הבישול וגדילת המוח — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-54",
+    "start": 3658,
+    "title": "מעגל המשוב בין המוח לבישול",
+    "image": "images/lecture-01-54 - מעגל המשוב בין המוח לבישול.webp",
+    "prompt": "מעגל המשוב בין המוח לבישול — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-55",
+    "start": 3712,
+    "title": "ביות האש כנקודת מפנה",
+    "image": "images/lecture-01-55 - ביות האש כנקודת מפנה.webp",
+    "prompt": "ביות האש כנקודת מפנה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-56",
+    "start": 3744,
+    "title": "כוח הגוף של בעלי החיים",
+    "image": "images/lecture-01-56 - כוח הגוף של בעלי החיים.webp",
+    "prompt": "כוח הגוף של בעלי החיים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-57",
+    "start": 3781,
+    "title": "הנשר וזרמי האוויר",
+    "image": "images/lecture-01-57 - הנשר וזרמי האוויר.webp",
+    "prompt": "הנשר וזרמי האוויר — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-58",
+    "start": 3839,
+    "title": "שליטת האדם באנרגיה חיצונית",
+    "image": "images/lecture-01-58 - שליטת האדם באנרגיה חיצונית.webp",
+    "prompt": "שליטת האדם באנרגיה חיצונית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-59",
+    "start": 3915,
+    "title": "הופעת הומו סאפיינס",
+    "image": "images/lecture-01-59 - הופעת הומו סאפיינס.webp",
+    "prompt": "הופעת הומו סאפיינס — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-60",
+    "start": 3974,
+    "title": "התפשטות הומו סאפיינס מאפריקה",
+    "image": "images/lecture-01-60 - התפשטות הומו סאפיינס מאפריקה.webp",
+    "prompt": "התפשטות הומו סאפיינס מאפריקה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-61",
+    "start": 4050,
+    "title": "שני גלי היציאה מאפריקה",
+    "image": "images/lecture-01-61 - שני גלי היציאה מאפריקה.webp",
+    "prompt": "שני גלי היציאה מאפריקה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-62",
+    "start": 4124,
+    "title": "חציית הים לאוסטרליה",
+    "image": "images/lecture-01-62 - חציית הים לאוסטרליה.webp",
+    "prompt": "חציית הים לאוסטרליה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-63",
+    "start": 4173,
+    "title": "גורלם של מיני האדם האחרים",
+    "image": "images/lecture-01-63 - גורלם של מיני האדם האחרים.webp",
+    "prompt": "גורלם של מיני האדם האחרים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-64",
+    "start": 4212,
+    "title": "תיאוריית המיזוג",
+    "image": "images/lecture-01-64 - תיאוריית המיזוג.webp",
+    "prompt": "תיאוריית המיזוג — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-65",
+    "start": 4242,
+    "title": "תיאוריית ההחלפה",
+    "image": "images/lecture-01-65 - תיאוריית ההחלפה.webp",
+    "prompt": "תיאוריית ההחלפה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-66",
+    "start": 4326,
+    "title": "המשמעות החברתית של מוצא האדם",
+    "image": "images/lecture-01-66 - המשמעות החברתית של מוצא האדם.webp",
+    "prompt": "המשמעות החברתית של מוצא האדם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-67",
+    "start": 4406,
+    "title": "המחלוקת סביב תיאוריית המיזוג",
+    "image": "images/lecture-01-67 - המחלוקת סביב תיאוריית המיזוג.webp",
+    "prompt": "המחלוקת סביב תיאוריית המיזוג — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-68",
+    "start": 4469,
+    "title": "מיפוי הגנום הקדום",
+    "image": "images/lecture-01-68 - מיפוי הגנום הקדום.webp",
+    "prompt": "מיפוי הגנום הקדום — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-69",
+    "start": 4501,
+    "title": "שרידים גנטיים של ניאנדרטלים ודניסובים",
+    "image": "images/lecture-01-69 - שרידים גנטיים של ניאנדרטלים ודניסובים.webp",
+    "prompt": "שרידים גנטיים של ניאנדרטלים ודניסובים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-70",
+    "start": 4595,
+    "title": "עדויות למיזוג גנטי מוגבל",
+    "image": "images/lecture-01-70 - עדויות למיזוג גנטי מוגבל.webp",
+    "prompt": "עדויות למיזוג גנטי מוגבל — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-71",
+    "start": 4728,
+    "title": "גודל אוכלוסיית האדם הקדמון",
+    "image": "images/lecture-01-71 - גודל אוכלוסיית האדם הקדמון.webp",
+    "prompt": "גודל אוכלוסיית האדם הקדמון — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-72",
+    "start": 4792,
+    "title": "האדם המודרני והשינוי הקוגניטיבי",
+    "image": "images/lecture-01-72 - האדם המודרני והשינוי הקוגניטיבי.webp",
+    "prompt": "האדם המודרני והשינוי הקוגניטיבי — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-73",
+    "start": 4844,
+    "title": "תפוצת הניאנדרטלים",
+    "image": "images/lecture-01-73 - תפוצת הניאנדרטלים.webp",
+    "prompt": "תפוצת הניאנדרטלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-74",
+    "start": 4882,
+    "title": "עידני הקרח",
+    "image": "images/lecture-01-74 - עידני הקרח.webp",
+    "prompt": "עידני הקרח — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-75",
+    "start": 4924,
+    "title": "ירידת מפלס הים וגשרי יבשה",
+    "image": "images/lecture-01-75 - ירידת מפלס הים וגשרי יבשה.webp",
+    "prompt": "ירידת מפלס הים וגשרי יבשה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-76",
+    "start": 4945,
+    "title": "מבנה הגוף והיכולות של הניאנדרטלים",
+    "image": "images/lecture-01-76 - מבנה הגוף והיכולות של הניאנדרטלים.webp",
+    "prompt": "מבנה הגוף והיכולות של הניאנדרטלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-77",
+    "start": 4979,
+    "title": "טיפול בחולים וקבורת מתים",
+    "image": "images/lecture-01-77 - טיפול בחולים וקבורת מתים.webp",
+    "prompt": "טיפול בחולים וקבורת מתים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-78",
+    "start": 5030,
+    "title": "היעלמות הניאנדרטלים",
+    "image": "images/lecture-01-78 - היעלמות הניאנדרטלים.webp",
+    "prompt": "היעלמות הניאנדרטלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-79",
+    "start": 5071,
+    "title": "שחזור מראה הניאנדרטלים",
+    "image": "images/lecture-01-79 - שחזור מראה הניאנדרטלים.webp",
+    "prompt": "שחזור מראה הניאנדרטלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-80",
+    "start": 5127,
+    "title": "מפגש סאפיינס וניאנדרטלים",
+    "image": "images/lecture-01-80 - מפגש סאפיינס וניאנדרטלים.webp",
+    "prompt": "מפגש סאפיינס וניאנדרטלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-81",
+    "start": 5185,
+    "title": "העדויות הגנטיות למפגש",
+    "image": "images/lecture-01-81 - העדויות הגנטיות למפגש.webp",
+    "prompt": "העדויות הגנטיות למפגש — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-82",
+    "start": 5233,
+    "title": "תעלומת ההיעלמות",
+    "image": "images/lecture-01-82 - תעלומת ההיעלמות.webp",
+    "prompt": "תעלומת ההיעלמות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-83",
+    "start": 5259,
+    "title": "השערת התחרות על משאבים",
+    "image": "images/lecture-01-83 - השערת התחרות על משאבים.webp",
+    "prompt": "השערת התחרות על משאבים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-84",
+    "start": 5325,
+    "title": "השערת העימות האלים",
+    "image": "images/lecture-01-84 - השערת העימות האלים.webp",
+    "prompt": "השערת העימות האלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-85",
+    "start": 5402,
+    "title": "עולם שבו הניאנדרטלים שרדו",
+    "image": "images/lecture-01-85 - עולם שבו הניאנדרטלים שרדו.webp",
+    "prompt": "עולם שבו הניאנדרטלים שרדו — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-86",
+    "start": 5417,
+    "title": "הניאנדרטלים בראי הדת והבריאה",
+    "image": "images/lecture-01-86 - הניאנדרטלים בראי הדת והבריאה.webp",
+    "prompt": "הניאנדרטלים בראי הדת והבריאה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-87",
+    "start": 5439,
+    "title": "זכויות אזרח של מיני אדם אחרים",
+    "image": "images/lecture-01-87 - זכויות אזרח של מיני אדם אחרים.webp",
+    "prompt": "זכויות אזרח של מיני אדם אחרים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-88",
+    "start": 5454,
+    "title": "הסיבות האפשריות להיעלמות מיני האדם",
+    "image": "images/lecture-01-88 - הסיבות האפשריות להיעלמות מיני האדם.webp",
+    "prompt": "הסיבות האפשריות להיעלמות מיני האדם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-01-89",
+    "start": 5482,
+    "title": "תפיסת האדם את עצמו מול עולם החי",
+    "image": "images/lecture-01-89 - תפיסת האדם את עצמו מול עולם החי.webp",
+    "prompt": "תפיסת האדם את עצמו מול עולם החי — educational historical scientific illustration, landscape 16:9, no text"
+  }
+];
