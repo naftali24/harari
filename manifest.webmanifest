@@ -1,0 +1,24 @@
+{
+  "id": "./",
+  "name": "היסטוריה עולמית — נוח הררי",
+  "short_name": "הררי",
+  "lang": "he",
+  "dir": "rtl",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "display_override": [
+    "fullscreen",
+    "standalone"
+  ],
+  "background_color": "#211308",
+  "theme_color": "#211308",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
