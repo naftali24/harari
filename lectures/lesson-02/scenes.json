@@ -1,0 +1,611 @@
+[
+  {
+    "id": "lecture-02-01",
+    "start": 0,
+    "title": "פתיחת השיעור",
+    "image": "images/lecture-02-01 - פתיחת השיעור.webp",
+    "prompt": "פתיחת השיעור — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-02",
+    "start": 44,
+    "title": "שלוש המהפכות בהיסטוריה",
+    "image": "images/lecture-02-02 - שלוש המהפכות בהיסטוריה.webp",
+    "prompt": "שלוש המהפכות בהיסטוריה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-03",
+    "start": 90,
+    "title": "מיני האדם שחיו במקביל",
+    "image": "images/lecture-02-03 - מיני האדם שחיו במקביל.webp",
+    "prompt": "מיני האדם שחיו במקביל — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-04",
+    "start": 134,
+    "title": "תפוצת מיני האדם הקדומים",
+    "image": "images/lecture-02-04 - תפוצת מיני האדם הקדומים.webp",
+    "prompt": "תפוצת מיני האדם הקדומים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-05",
+    "start": 197,
+    "title": "הומו סאפיינס כמין יחיד",
+    "image": "images/lecture-02-05 - הומו סאפיינס כמין יחיד.webp",
+    "prompt": "הומו סאפיינס כמין יחיד — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-06",
+    "start": 216,
+    "title": "האדם הקדמון כיצור שולי",
+    "image": "images/lecture-02-06 - האדם הקדמון כיצור שולי.webp",
+    "prompt": "האדם הקדמון כיצור שולי — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-07",
+    "start": 285,
+    "title": "השתלטות האדם על העולם",
+    "image": "images/lecture-02-07 - השתלטות האדם על העולם.webp",
+    "prompt": "השתלטות האדם על העולם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-08",
+    "start": 300,
+    "title": "התפשטות הומו סאפיינס",
+    "image": "images/lecture-02-08 - התפשטות הומו סאפיינס.webp",
+    "prompt": "התפשטות הומו סאפיינס — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-09",
+    "start": 349,
+    "title": "תאוריית המיזוג",
+    "image": "images/lecture-02-09 - תאוריית המיזוג.webp",
+    "prompt": "תאוריית המיזוג — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-10",
+    "start": 362,
+    "title": "תאוריית ההחלפה",
+    "image": "images/lecture-02-10 - תאוריית ההחלפה.webp",
+    "prompt": "תאוריית ההחלפה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-11",
+    "start": 403,
+    "title": "עדויות גנטיות למיזוג",
+    "image": "images/lecture-02-11 - עדויות גנטיות למיזוג.webp",
+    "prompt": "עדויות גנטיות למיזוג — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-12",
+    "start": 454,
+    "title": "תחרות על מקורות מזון",
+    "image": "images/lecture-02-12 - תחרות על מקורות מזון.webp",
+    "prompt": "תחרות על מקורות מזון — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-13",
+    "start": 494,
+    "title": "השערת העימות האלים",
+    "image": "images/lecture-02-13 - השערת העימות האלים.webp",
+    "prompt": "השערת העימות האלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-14",
+    "start": 565,
+    "title": "עולם עם כמה מיני אדם",
+    "image": "images/lecture-02-14 - עולם עם כמה מיני אדם.webp",
+    "prompt": "עולם עם כמה מיני אדם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-15",
+    "start": 606,
+    "title": "אפשרות החייאת הניאנדרטלים",
+    "image": "images/lecture-02-15 - אפשרות החייאת הניאנדרטלים.webp",
+    "prompt": "אפשרות החייאת הניאנדרטלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-16",
+    "start": 673,
+    "title": "מגבלות המוח הגדול וכלי האבן",
+    "image": "images/lecture-02-16 - מגבלות המוח הגדול וכלי האבן.webp",
+    "prompt": "מגבלות המוח הגדול וכלי האבן — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-17",
+    "start": 688,
+    "title": "התפרצות הר הגעש טובה",
+    "image": "images/lecture-02-17 - התפרצות הר הגעש טובה.webp",
+    "prompt": "התפרצות הר הגעש טובה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-18",
+    "start": 715,
+    "title": "סכנת הכחדת הומו סאפיינס",
+    "image": "images/lecture-02-18 - סכנת הכחדת הומו סאפיינס.webp",
+    "prompt": "סכנת הכחדת הומו סאפיינס — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-19",
+    "start": 742,
+    "title": "עולם דמיוני בשליטת חולדות",
+    "image": "images/lecture-02-19 - עולם דמיוני בשליטת חולדות.webp",
+    "prompt": "עולם דמיוני בשליטת חולדות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-20",
+    "start": 775,
+    "title": "סוד ההצלחה של הומו סאפיינס",
+    "image": "images/lecture-02-20 - סוד ההצלחה של הומו סאפיינס.webp",
+    "prompt": "סוד ההצלחה של הומו סאפיינס — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-21",
+    "start": 806,
+    "title": "שפה ויכולות קוגניטיביות",
+    "image": "images/lecture-02-21 - שפה ויכולות קוגניטיביות.webp",
+    "prompt": "שפה ויכולות קוגניטיביות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-22",
+    "start": 835,
+    "title": "הקושי לחקור שפות קדומות",
+    "image": "images/lecture-02-22 - הקושי לחקור שפות קדומות.webp",
+    "prompt": "הקושי לחקור שפות קדומות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-23",
+    "start": 867,
+    "title": "הומו סאפיינס הקדום באפריקה",
+    "image": "images/lecture-02-23 - הומו סאפיינס הקדום באפריקה.webp",
+    "prompt": "הומו סאפיינס הקדום באפריקה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-24",
+    "start": 938,
+    "title": "גל ההגירה הראשון לארץ ישראל",
+    "image": "images/lecture-02-24 - גל ההגירה הראשון לארץ ישראל.webp",
+    "prompt": "גל ההגירה הראשון לארץ ישראל — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-25",
+    "start": 987,
+    "title": "התחרות עם הניאנדרטלים",
+    "image": "images/lecture-02-25 - התחרות עם הניאנדרטלים.webp",
+    "prompt": "התחרות עם הניאנדרטלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-26",
+    "start": 1013,
+    "title": "הבדלים אפשריים בדרכי החשיבה",
+    "image": "images/lecture-02-26 - הבדלים אפשריים בדרכי החשיבה.webp",
+    "prompt": "הבדלים אפשריים בדרכי החשיבה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-27",
+    "start": 1070,
+    "title": "המהפכה הלשונית",
+    "image": "images/lecture-02-27 - המהפכה הלשונית.webp",
+    "prompt": "המהפכה הלשונית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-28",
+    "start": 1112,
+    "title": "ציורי מערות קדומים",
+    "image": "images/lecture-02-28 - ציורי מערות קדומים.webp",
+    "prompt": "ציורי מערות קדומים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-29",
+    "start": 1143,
+    "title": "גל ההגירה השני מאפריקה",
+    "image": "images/lecture-02-29 - גל ההגירה השני מאפריקה.webp",
+    "prompt": "גל ההגירה השני מאפריקה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-30",
+    "start": 1183,
+    "title": "ההגעה לאוסטרליה",
+    "image": "images/lecture-02-30 - ההגעה לאוסטרליה.webp",
+    "prompt": "ההגעה לאוסטרליה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-31",
+    "start": 1211,
+    "title": "יישוב אמריקה",
+    "image": "images/lecture-02-31 - יישוב אמריקה.webp",
+    "prompt": "יישוב אמריקה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-32",
+    "start": 1246,
+    "title": "סירות ומנורות שמן",
+    "image": "images/lecture-02-32 - סירות ומנורות שמן.webp",
+    "prompt": "סירות ומנורות שמן — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-33",
+    "start": 1259,
+    "title": "המצאת החוט והמחט",
+    "image": "images/lecture-02-33 - המצאת החוט והמחט.webp",
+    "prompt": "המצאת החוט והמחט — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-34",
+    "start": 1288,
+    "title": "התפשטות לאזורים הארקטיים",
+    "image": "images/lecture-02-34 - התפשטות לאזורים הארקטיים.webp",
+    "prompt": "התפשטות לאזורים הארקטיים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-35",
+    "start": 1309,
+    "title": "פסלון האדם האריה",
+    "image": "images/lecture-02-35 - פסלון האדם האריה.webp",
+    "prompt": "פסלון האדם האריה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-36",
+    "start": 1326,
+    "title": "ראשית הדת והמסחר",
+    "image": "images/lecture-02-36 - ראשית הדת והמסחר.webp",
+    "prompt": "ראשית הדת והמסחר — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-37",
+    "start": 1388,
+    "title": "השערת המוטציה הגנטית",
+    "image": "images/lecture-02-37 - השערת המוטציה הגנטית.webp",
+    "prompt": "השערת המוטציה הגנטית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-38",
+    "start": 1583,
+    "title": "שינויי אקלים ומיני האדם",
+    "image": "images/lecture-02-38 - שינויי אקלים ומיני האדם.webp",
+    "prompt": "שינויי אקלים ומיני האדם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-39",
+    "start": 1788,
+    "title": "שפה קולית אצל בעלי חיים",
+    "image": "images/lecture-02-39 - שפה קולית אצל בעלי חיים.webp",
+    "prompt": "שפה קולית אצל בעלי חיים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-40",
+    "start": 1844,
+    "title": "ניסויים בקריאות קופים",
+    "image": "images/lecture-02-40 - ניסויים בקריאות קופים.webp",
+    "prompt": "ניסויים בקריאות קופים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-41",
+    "start": 1995,
+    "title": "גמישות השפה האנושית",
+    "image": "images/lecture-02-41 - גמישות השפה האנושית.webp",
+    "prompt": "גמישות השפה האנושית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-42",
+    "start": 2108,
+    "title": "תאוריית הרכילות",
+    "image": "images/lecture-02-42 - תאוריית הרכילות.webp",
+    "prompt": "תאוריית הרכילות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-43",
+    "start": 2167,
+    "title": "ריבוי הקשרים החברתיים",
+    "image": "images/lecture-02-43 - ריבוי הקשרים החברתיים.webp",
+    "prompt": "ריבוי הקשרים החברתיים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-44",
+    "start": 2226,
+    "title": "מגבלות התקשורת אצל שימפנזים",
+    "image": "images/lecture-02-44 - מגבלות התקשורת אצל שימפנזים.webp",
+    "prompt": "מגבלות התקשורת אצל שימפנזים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-45",
+    "start": 2289,
+    "title": "רכילות והישרדות בקבוצה",
+    "image": "images/lecture-02-45 - רכילות והישרדות בקבוצה.webp",
+    "prompt": "רכילות והישרדות בקבוצה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-46",
+    "start": 2395,
+    "title": "מחקרים על שיחות בני אדם",
+    "image": "images/lecture-02-46 - מחקרים על שיחות בני אדם.webp",
+    "prompt": "מחקרים על שיחות בני אדם — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-47",
+    "start": 2501,
+    "title": "משיכת האדם לרכילות",
+    "image": "images/lecture-02-47 - משיכת האדם לרכילות.webp",
+    "prompt": "משיכת האדם לרכילות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-48",
+    "start": 2550,
+    "title": "התפקיד הייחודי של השפה",
+    "image": "images/lecture-02-48 - התפקיד הייחודי של השפה.webp",
+    "prompt": "התפקיד הייחודי של השפה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-49",
+    "start": 2604,
+    "title": "דיבור על דברים שאינם קיימים",
+    "image": "images/lecture-02-49 - דיבור על דברים שאינם קיימים.webp",
+    "prompt": "דיבור על דברים שאינם קיימים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-50",
+    "start": 2718,
+    "title": "מיתוסים ושיתוף פעולה",
+    "image": "images/lecture-02-50 - מיתוסים ושיתוף פעולה.webp",
+    "prompt": "מיתוסים ושיתוף פעולה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-51",
+    "start": 2832,
+    "title": "החברה של השימפנזים",
+    "image": "images/lecture-02-51 - החברה של השימפנזים.webp",
+    "prompt": "החברה של השימפנזים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-52",
+    "start": 2882,
+    "title": "היררכיה וזכר האלפא",
+    "image": "images/lecture-02-52 - היררכיה וזכר האלפא.webp",
+    "prompt": "היררכיה וזכר האלפא — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-53",
+    "start": 2934,
+    "title": "קואליציות ומאבקי מעמד",
+    "image": "images/lecture-02-53 - קואליציות ומאבקי מעמד.webp",
+    "prompt": "קואליציות ומאבקי מעמד — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-54",
+    "start": 3041,
+    "title": "חשיבות ההיכרות האישית",
+    "image": "images/lecture-02-54 - חשיבות ההיכרות האישית.webp",
+    "prompt": "חשיבות ההיכרות האישית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-55",
+    "start": 3089,
+    "title": "מגבלות גודל קבוצת השימפנזים",
+    "image": "images/lecture-02-55 - מגבלות גודל קבוצת השימפנזים.webp",
+    "prompt": "מגבלות גודל קבוצת השימפנזים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-56",
+    "start": 3207,
+    "title": "גבול הרכילות ומספר 150",
+    "image": "images/lecture-02-56 - גבול הרכילות ומספר 150.webp",
+    "prompt": "גבול הרכילות ומספר 150 — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-57",
+    "start": 3337,
+    "title": "היררכיה חברתית ביחידות צבאיות",
+    "image": "images/lecture-02-57 - היררכיה חברתית ביחידות צבאיות.webp",
+    "prompt": "היררכיה חברתית ביחידות צבאיות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-58",
+    "start": 3396,
+    "title": "ארגון קבוצות גדולות",
+    "image": "images/lecture-02-58 - ארגון קבוצות גדולות.webp",
+    "prompt": "ארגון קבוצות גדולות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-59",
+    "start": 3454,
+    "title": "קיבוצים וחברות גדולות",
+    "image": "images/lecture-02-59 - קיבוצים וחברות גדולות.webp",
+    "prompt": "קיבוצים וחברות גדולות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-60",
+    "start": 3581,
+    "title": "אמונה משותפת במיתוסים",
+    "image": "images/lecture-02-60 - אמונה משותפת במיתוסים.webp",
+    "prompt": "אמונה משותפת במיתוסים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-61",
+    "start": 3642,
+    "title": "שיתוף פעולה בין זרים",
+    "image": "images/lecture-02-61 - שיתוף פעולה בין זרים.webp",
+    "prompt": "שיתוף פעולה בין זרים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-62",
+    "start": 3824,
+    "title": "זכויות בעלי חיים",
+    "image": "images/lecture-02-62 - זכויות בעלי חיים.webp",
+    "prompt": "זכויות בעלי חיים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-63",
+    "start": 3879,
+    "title": "ההבדל בין דמיון לשקר",
+    "image": "images/lecture-02-63 - ההבדל בין דמיון לשקר.webp",
+    "prompt": "ההבדל בין דמיון לשקר — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-64",
+    "start": 3990,
+    "title": "טקסים ואמונות משותפות",
+    "image": "images/lecture-02-64 - טקסים ואמונות משותפות.webp",
+    "prompt": "טקסים ואמונות משותפות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-65",
+    "start": 4051,
+    "title": "מיתוסים בעולם העסקים והמשפט",
+    "image": "images/lecture-02-65 - מיתוסים בעולם העסקים והמשפט.webp",
+    "prompt": "מיתוסים בעולם העסקים והמשפט — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-66",
+    "start": 4244,
+    "title": "חברת פיג׳ו כישות משפטית",
+    "image": "images/lecture-02-66 - חברת פיג׳ו כישות משפטית.webp",
+    "prompt": "חברת פיג׳ו כישות משפטית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-67",
+    "start": 4288,
+    "title": "חברה בעירבון מוגבל",
+    "image": "images/lecture-02-67 - חברה בעירבון מוגבל.webp",
+    "prompt": "חברה בעירבון מוגבל — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-68",
+    "start": 4320,
+    "title": "בית מלאכה בצרפת של ימי הביניים",
+    "image": "images/lecture-02-68 - בית מלאכה בצרפת של ימי הביניים.webp",
+    "prompt": "בית מלאכה בצרפת של ימי הביניים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-69",
+    "start": 4369,
+    "title": "סיכון כלכלי ואחריות אישית",
+    "image": "images/lecture-02-69 - סיכון כלכלי ואחריות אישית.webp",
+    "prompt": "סיכון כלכלי ואחריות אישית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-70",
+    "start": 4410,
+    "title": "ייסוד חברת פיג׳ו",
+    "image": "images/lecture-02-70 - ייסוד חברת פיג׳ו.webp",
+    "prompt": "ייסוד חברת פיג׳ו — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-71",
+    "start": 4442,
+    "title": "הפרדה בין החברה לבעליה",
+    "image": "images/lecture-02-71 - הפרדה בין החברה לבעליה.webp",
+    "prompt": "הפרדה בין החברה לבעליה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-72",
+    "start": 4484,
+    "title": "עידוד יזמות כלכלית",
+    "image": "images/lecture-02-72 - עידוד יזמות כלכלית.webp",
+    "prompt": "עידוד יזמות כלכלית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-73",
+    "start": 4517,
+    "title": "יצירת חברה באמצעות סיפור",
+    "image": "images/lecture-02-73 - יצירת חברה באמצעות סיפור.webp",
+    "prompt": "יצירת חברה באמצעות סיפור — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-74",
+    "start": 4565,
+    "title": "טקס משפטי להקמת חברה",
+    "image": "images/lecture-02-74 - טקס משפטי להקמת חברה.webp",
+    "prompt": "טקס משפטי להקמת חברה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-75",
+    "start": 4651,
+    "title": "דיני חברות",
+    "image": "images/lecture-02-75 - דיני חברות.webp",
+    "prompt": "דיני חברות — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-76",
+    "start": 4694,
+    "title": "בעלות משפטית על צורות חיים",
+    "image": "images/lecture-02-76 - בעלות משפטית על צורות חיים.webp",
+    "prompt": "בעלות משפטית על צורות חיים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-77",
+    "start": 4782,
+    "title": "מציאות מדומיינת",
+    "image": "images/lecture-02-77 - מציאות מדומיינת.webp",
+    "prompt": "מציאות מדומיינת — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-78",
+    "start": 4885,
+    "title": "שיתוף פעולה מעבר ל־150 אנשים",
+    "image": "images/lecture-02-78 - שיתוף פעולה מעבר ל־150 אנשים.webp",
+    "prompt": "שיתוף פעולה מעבר ל־150 אנשים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-79",
+    "start": 4931,
+    "title": "זכויות אדם כמציאות מדומיינת",
+    "image": "images/lecture-02-79 - זכויות אדם כמציאות מדומיינת.webp",
+    "prompt": "זכויות אדם כמציאות מדומיינת — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-80",
+    "start": 5002,
+    "title": "שלושת תפקידי השפה",
+    "image": "images/lecture-02-80 - שלושת תפקידי השפה.webp",
+    "prompt": "שלושת תפקידי השפה — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-81",
+    "start": 5056,
+    "title": "גמישות חברתית",
+    "image": "images/lecture-02-81 - גמישות חברתית.webp",
+    "prompt": "גמישות חברתית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-82",
+    "start": 5102,
+    "title": "מבנה חברתי אצל שימפנזים",
+    "image": "images/lecture-02-82 - מבנה חברתי אצל שימפנזים.webp",
+    "prompt": "מבנה חברתי אצל שימפנזים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-83",
+    "start": 5136,
+    "title": "מבנה חברתי אצל פילים",
+    "image": "images/lecture-02-83 - מבנה חברתי אצל פילים.webp",
+    "prompt": "מבנה חברתי אצל פילים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-84",
+    "start": 5181,
+    "title": "מושבות נמלים",
+    "image": "images/lecture-02-84 - מושבות נמלים.webp",
+    "prompt": "מושבות נמלים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-85",
+    "start": 5242,
+    "title": "מגבלות השינוי החברתי בבעלי חיים",
+    "image": "images/lecture-02-85 - מגבלות השינוי החברתי בבעלי חיים.webp",
+    "prompt": "מגבלות השינוי החברתי בבעלי חיים — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-86",
+    "start": 5327,
+    "title": "שינוי חברתי לפני המהפכה הלשונית",
+    "image": "images/lecture-02-86 - שינוי חברתי לפני המהפכה הלשונית.webp",
+    "prompt": "שינוי חברתי לפני המהפכה הלשונית — educational historical scientific illustration, landscape 16:9, no text"
+  },
+  {
+    "id": "lecture-02-87",
+    "start": 5372,
+    "title": "שינוי חברתי מהיר באמצעות מיתוסים",
+    "image": "images/lecture-02-87 - שינוי חברתי מהיר באמצעות מיתוסים.webp",
+    "prompt": "שינוי חברתי מהיר באמצעות מיתוסים — educational historical scientific illustration, landscape 16:9, no text"
+  }
+]
