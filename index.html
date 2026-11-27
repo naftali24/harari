@@ -8,8 +8,8 @@ body.windows main{width:min(100vw,1200px);max-width:1200px}#nav{display:flex;jus
 }
 #extraPicture {
   position: relative;
-  flex: 0 1 clamp(64px, 16dvh, 150px);
-  min-height: 24px;
+  flex: 0 1 clamp(94px, calc(16dvh + 30px), 180px);
+  min-height: 54px;
   overflow: hidden;
   background: #202b3c;
   border: 1px solid #b99b55;
@@ -17,14 +17,14 @@ body.windows main{width:min(100vw,1200px);max-width:1200px}#nav{display:flex;jus
 }
 #subtitles {
   height: auto;
-  flex-basis: calc(8.4em - 30px);
-  min-height: calc(3em - 30px);
+  flex-basis: calc(8.4em - 60px);
+  min-height: calc(1.4em + 10px);
 }
 @media (max-height: 780px) {
-  #subtitles { flex-basis: calc(5.5em - 30px); }
+  #subtitles { flex-basis: calc(5.5em - 60px); }
 }
 @media (max-height: 500px) {
-  #subtitles { flex-basis: calc(3em - 30px); }
+  #subtitles { flex-basis: calc(3em - 60px); }
 }
 </style><main><h1 id="lessonTitle">היסטוריה עולמית — נוח הררי <span id="lectureCounter">1 / 28</span></h1><select id="lessons" aria-label="בחירת הרצאה" hidden></select><div id="nav"><button id="next">הבא</button><button id="lectureButton" aria-expanded="false" aria-label="הרצאות"><span class="owl">🦉</span></button><button id="topics" aria-expanded="false" aria-controls="topicPanel" aria-label="תפריט נושאים">נושאים</button><button id="prev">הקודם</button></div><section id="lecturePanel" hidden role="dialog" aria-modal="true" aria-label="הרצאות"><header><button id="closeLectures">✕ סגירה</button><h2>הרצאות</h2></header><div id="lectureList"></div></section><section id="topicPanel" hidden role="dialog" aria-modal="true" aria-label="תפריט נושאים"><header><button id="closeTopics">✕ סגירה</button><h2>תפריט נושאים</h2></header><div id="menu" role="list"></div></section><div id="picture"><span id="placeholder"></span><img id="pic" hidden></div><h2 id="title"></h2>
 <div id="extraPicture">
