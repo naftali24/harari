@@ -124,7 +124,7 @@ function bindVerticalCarousel(box, canBrowse, browse) {
 const resetSlideSwipe = bindVerticalCarousel(slideBox, () => slideUrls.length > 1, browseSlides);
 const resetPictureSwipe = bindVerticalCarousel($('picture'), () => scenes.length > 1, direction => {
   const next = (Math.max(0, displayedPicture) + direction + scenes.length) % scenes.length;
-  showPicture(next);
+  go(next);
 });
 
 for (const event of ['loadedmetadata', 'durationchange', 'timeupdate', 'seeked']) {
