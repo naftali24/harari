@@ -35,12 +35,23 @@ body.windows main{width:min(100vw,1200px);max-width:1200px}#nav{display:flex;jus
   pointer-events: none;
 }
 #slideImage { object-fit: contain; }
-#extraPicture { touch-action: pan-x pinch-zoom; }
-</style><main><h1 id="lessonTitle">היסטוריה עולמית — נוח הררי <span id="lectureCounter">1 / 28</span></h1><select id="lessons" aria-label="בחירת הרצאה" hidden></select><div id="nav"><button id="next">הבא</button><button id="lectureButton" aria-expanded="false" aria-label="הרצאות"><span class="owl">🦉</span></button><button id="topics" aria-expanded="false" aria-controls="topicPanel" aria-label="תפריט נושאים">נושאים</button><button id="prev">הקודם</button></div><section id="lecturePanel" hidden role="dialog" aria-modal="true" aria-label="הרצאות"><header><button id="closeLectures">✕ סגירה</button><h2>הרצאות</h2></header><div id="lectureList"></div></section><section id="topicPanel" hidden role="dialog" aria-modal="true" aria-label="תפריט נושאים"><header><button id="closeTopics">✕ סגירה</button><h2>תפריט נושאים</h2></header><div id="menu" role="list"></div></section><div id="picture"><span id="placeholder"></span><img id="pic" hidden><h2 id="title"></h2></div>
+#picture, #extraPicture { touch-action: pan-x pinch-zoom; }
+</style><main><h1 id="lessonTitle">היסטוריה עולמית — נוח הררי <span id="lectureCounter">1 / 28</span></h1><select id="lessons" aria-label="בחירת הרצאה" hidden></select><div id="nav"><button id="next">הבא</button><button id="lectureButton" aria-expanded="false" aria-label="הרצאות"><span class="owl">🦉</span></button><button id="topics" aria-expanded="false" aria-controls="topicPanel" aria-label="תפריט נושאים">נושאים</button><button id="prev">הקודם</button></div><section id="lecturePanel" hidden role="dialog" aria-modal="true" aria-label="הרצאות"><header><button id="closeLectures">✕ סגירה</button><h2>הרצאות</h2></header><div id="lectureList"></div></section><section id="topicPanel" hidden role="dialog" aria-modal="true" aria-label="תפריט נושאים"><header><button id="closeTopics">✕ סגירה</button><h2>תפריט נושאים</h2></header><div id="menu" role="list"></div></section><div id="picture" tabindex="0" role="region" aria-label="תמונות הנושאים"><span id="placeholder"></span><img id="pic" draggable="false" hidden><h2 id="title"></h2></div>
 <div id="extraPicture" tabindex="0" role="region" aria-label="שקופיות ההרצאה">
   <img id="slideImage" alt="" draggable="false" hidden>
 </div>
-<div id="subtitles"><div id="sub"></div><div id="subNext"></div></div><audio id="audio" hidden preload="metadata"></audio><div id="audioRow"><button id="bottomPrev" class="bottomArrow" aria-label="הנושא הקודם" type="button">▲</button><button id="bottomNext" class="bottomArrow" aria-label="הנושא הבא" type="button">▼</button><button id="audioToggle" type="button" aria-label="הפעל שמע" aria-pressed="false">🔊</button><span id="audioTime" dir="ltr">--:-- / 00:00</span><button id="gptButton" type="button" aria-label="שאל את GPT על הנושא הנוכחי">GPT</button></div><div id="quickTopics" hidden></div><button id="installApp" hidden>התקנה</button><small id="status"></small></main><script src="lectures.js"></script><script>let scenes=[],cues=[],base="";const $=id=>document.getElementById(id),a=$('audio');let current=-1;function formatAudioTime(t){if(!Number.isFinite(t))return '--:--';const s=Math.floor(t),m=Math.floor(s/60);return (m>=60?Math.floor(m/60)+':'+String(m%60).padStart(2,'0'):String(m).padStart(2,'0'))+':'+String(s%60).padStart(2,'0')}function updateAudioTime(){$('audioTime').textContent=formatAudioTime(a.duration)+' / '+formatAudioTime(a.currentTime)}for(const ev of ['timeupdate','loadedmetadata','durationchange','seeked','emptied'])a.addEventListener(ev,updateAudioTime);const audioToggle=$('audioToggle');function syncAudioToggle(){const playing=!a.paused&&!a.ended;audioToggle.textContent=playing?'Ⅱ':'🔊';audioToggle.setAttribute('aria-label',playing?'השהה שמע':'הפעל שמע');audioToggle.setAttribute('aria-pressed',String(playing));}audioToggle.onclick=()=>{if(a.paused||a.ended)a.play().catch(()=>{});else a.pause();};for(const event of ['play','pause','ended','emptied'])a.addEventListener(event,syncAudioToggle);function render(){if(!scenes.length)return;let t=a.currentTime,i=scenes.findLastIndex(s=>s.start<=t);i=Math.max(0,i);$('bottomPrev').disabled=i===0;$('bottomNext').disabled=i===scenes.length-1;if(i!==current){current=i;let s=scenes[i];$('title').textContent=s.title;$('placeholder').textContent=s.title+' — תמונה בהכנה';$('pic').hidden=true;$('pic').dataset.fallback=base+s.image;$('pic').src=s.id==='harari-opening'?base+s.image:base+'images/'+encodeURIComponent(s.id+' - '+s.title+'.webp');$('menu').querySelectorAll('button').forEach((b,j)=>b.classList.toggle('active',j===i));}let ci=cues.findIndex(c=>c[0]<=t&&c[1]>t);$('sub').textContent=ci>=0?cues[ci][2]:'';let ni=ci>=0?ci+1:cues.findIndex(c=>c[0]>t);$('subNext').textContent=ni>=0&&ni<cues.length?cues[ni][2]:'';} $('pic').onload=()=>$('pic').hidden=false;$('pic').onerror=()=>{const p=$('pic');if(p.dataset.fallback){const fallback=p.dataset.fallback;p.dataset.fallback='';p.src=fallback;}else p.hidden=true;};function go(i){if(!scenes.length)return;a.currentTime=scenes[Math.max(0,Math.min(scenes.length-1,i))].start;render()}function enterFull(){if(matchMedia('(display-mode: standalone)').matches||matchMedia('(display-mode: fullscreen)').matches)return;if(document.fullscreenElement||document.webkitFullscreenElement)return;const el=document.documentElement;try{const fn=el.requestFullscreen||el.webkitRequestFullscreen;if(fn){const p=fn.call(el);if(p&&p.catch)p.catch(()=>{});}}catch(e){}}if(/Windows/i.test(navigator.userAgent))document.body.classList.add('windows');function showMenu(open){$('topicPanel').hidden=!open;document.body.classList.toggle('menu-open',open);if(open){$('menu').querySelector('.active')?.scrollIntoView({block:'nearest'});}$('topics').setAttribute('aria-expanded',String(open));}document.addEventListener('click',e=>{if(e.target.closest('button,select,audio'))enterFull();},true);$('menu').onclick=e=>{const b=e.target.closest('button[data-index]');if(b){go(+b.dataset.index);$('quickTopics').hidden=true;showMenu(false)}};$('topics').onclick=()=>showMenu($('topicPanel').hidden);$('closeTopics').onclick=()=>showMenu(false);document.addEventListener('keydown',e=>{if(e.key==='Escape')showMenu(false)});$('prev').onclick=()=>go(current-1);$('next').onclick=()=>go(current+1);$('bottomPrev').onclick=()=>{go(current-1);$('quickTopics').hidden=true};$('bottomNext').onclick=()=>{go(current+1);$('quickTopics').hidden=true};a.ontimeupdate=render;a.onseeked=render;$('gptButton').onclick=()=>{if(!scenes.length)return;a.pause();render();const t=a.currentTime,i=Math.max(0,scenes.findLastIndex(s=>s.start<=t)),scene=scenes[i],lesson=window.lectures[Number($('lessons').value)],end=scenes[i+1]?.start??Infinity;const context=cues.filter(c=>c[1]>Math.max(scene.start,t-35)&&c[0]<Math.min(end,t+20)).map(c=>c[2]).join(' ').slice(0,1800);const q=['אני לומד בקורס היסטוריה עולמית של פרופ׳ יובל נח הררי.','הרצאה: '+(lesson?.title||$('lessons').selectedOptions[0]?.textContent||''),'נושא: '+scene.title,'זמן בהרצאה: '+formatAudioTime(t),context?'הקשר מתוך תמלול ההרצאה (ייתכנו שגיאות תמלול): '+context:'','הסבר בעברית פשוטה ומעמיקה את הנושא בהקשר ההיסטורי של הקורס, תולדות בני האדם, האבולוציה והחברות האנושיות, בהתאם לתוכן ההרצאה. פרש מונחים דו-משמעיים לפי ההקשר ולא לפי הכותרת לבדה. אם מדובר בתאוריית המיזוג בהקשר של מיני אדם, הסבר את ההכלאה בין אוכלוסיות ומיני אדם קדומים ולא מיזוג כוכבים. אם הנושא עוסק ביקום או בכדור הארץ, הסבר אותו בהקשר המתאים להתפתחות החיים והאדם. הבחן בין עובדות, השערות וידע מחקרי עדכני.'].filter(Boolean).join('\n');window.open('https://chatgpt.com/?q='+encodeURIComponent(q),'_blank','noopener,noreferrer');};
+<div id="subtitles"><div id="sub"></div><div id="subNext"></div></div><audio id="audio" hidden preload="metadata"></audio><div id="audioRow"><button id="bottomPrev" class="bottomArrow" aria-label="הנושא הקודם" type="button">▲</button><button id="bottomNext" class="bottomArrow" aria-label="הנושא הבא" type="button">▼</button><button id="audioToggle" type="button" aria-label="הפעל שמע" aria-pressed="false">🔊</button><span id="audioTime" dir="ltr">--:-- / 00:00</span><button id="gptButton" type="button" aria-label="שאל את GPT על הנושא הנוכחי">GPT</button></div><div id="quickTopics" hidden></div><button id="installApp" hidden>התקנה</button><small id="status"></small></main><script src="lectures.js"></script><script>let scenes=[],cues=[],base="";const $=id=>document.getElementById(id),a=$('audio');let current=-1;function formatAudioTime(t){if(!Number.isFinite(t))return '--:--';const s=Math.floor(t),m=Math.floor(s/60);return (m>=60?Math.floor(m/60)+':'+String(m%60).padStart(2,'0'):String(m).padStart(2,'0'))+':'+String(s%60).padStart(2,'0')}function updateAudioTime(){$('audioTime').textContent=formatAudioTime(a.duration)+' / '+formatAudioTime(a.currentTime)}for(const ev of ['timeupdate','loadedmetadata','durationchange','seeked','emptied'])a.addEventListener(ev,updateAudioTime);const audioToggle=$('audioToggle');function syncAudioToggle(){const playing=!a.paused&&!a.ended;audioToggle.textContent=playing?'Ⅱ':'🔊';audioToggle.setAttribute('aria-label',playing?'השהה שמע':'הפעל שמע');audioToggle.setAttribute('aria-pressed',String(playing));}audioToggle.onclick=()=>{if(a.paused||a.ended)a.play().catch(()=>{});else a.pause();};for(const event of ['play','pause','ended','emptied'])a.addEventListener(event,syncAudioToggle);let displayedPicture = -1;
+function showPicture(i) {
+  if (i === displayedPicture) return;
+  displayedPicture = i;
+  let s=scenes[i];$('title').textContent=s.title;$('placeholder').textContent=s.title+' — תמונה בהכנה';$('pic').hidden=true;$('pic').dataset.fallback=base+s.image;$('pic').src=s.id==='harari-opening'?base+s.image:base+'images/'+encodeURIComponent(s.id+' - '+s.title+'.webp');
+}
+function render(){if(!scenes.length)return;let t=a.currentTime,i=scenes.findLastIndex(s=>s.start<=t);i=Math.max(0,i);$('bottomPrev').disabled=i===0;$('bottomNext').disabled=i===scenes.length-1;if(i!==current){current=i;showPicture(i);$('menu').querySelectorAll('button').forEach((b,j)=>b.classList.toggle('active',j===i));}let ci=cues.findIndex(c=>c[0]<=t&&c[1]>t);$('sub').textContent=ci>=0?cues[ci][2]:'';let ni=ci>=0?ci+1:cues.findIndex(c=>c[0]>t);$('subNext').textContent=ni>=0&&ni<cues.length?cues[ni][2]:'';} $('pic').onload=()=>$('pic').hidden=false;$('pic').onerror=()=>{const p=$('pic');if(p.dataset.fallback){const fallback=p.dataset.fallback;p.dataset.fallback='';p.src=fallback;}else p.hidden=true;};function go(i){if(!scenes.length)return;a.currentTime=scenes[Math.max(0,Math.min(scenes.length-1,i))].start;render()}function enterFull(){if(matchMedia('(display-mode: standalone)').matches||matchMedia('(display-mode: fullscreen)').matches)return;if(document.fullscreenElement||document.webkitFullscreenElement)return;const el=document.documentElement;try{const fn=el.requestFullscreen||el.webkitRequestFullscreen;if(fn){const p=fn.call(el);if(p&&p.catch)p.catch(()=>{});}}catch(e){}}if(/Windows/i.test(navigator.userAgent))document.body.classList.add('windows');function showMenu(open){$('topicPanel').hidden=!open;document.body.classList.toggle('menu-open',open);if(open){$('menu').querySelector('.active')?.scrollIntoView({block:'nearest'});}$('topics').setAttribute('aria-expanded',String(open));}document.addEventListener('click',e=>{if(e.target.closest('button,select,audio'))enterFull();},true);$('menu').onclick=e=>{const b=e.target.closest('button[data-index]');if(b){go(+b.dataset.index);$('quickTopics').hidden=true;showMenu(false)}};$('topics').onclick=()=>showMenu($('topicPanel').hidden);$('closeTopics').onclick=()=>showMenu(false);document.addEventListener('keydown',e=>{if(e.key==='Escape')showMenu(false)});$('prev').onclick=()=>go(current-1);$('next').onclick=()=>go(current+1);$('bottomPrev').onclick=()=>{go(current-1);$('quickTopics').hidden=true};$('bottomNext').onclick=()=>{go(current+1);$('quickTopics').hidden=true};a.ontimeupdate=render;a.onseeked=render;
+a.addEventListener('seeking', () => {
+  current = -1;
+  render();
+});
+$('gptButton').onclick=()=>{if(!scenes.length)return;a.pause();render();const t=a.currentTime,i=Math.max(0,scenes.findLastIndex(s=>s.start<=t)),scene=scenes[i],lesson=window.lectures[Number($('lessons').value)],end=scenes[i+1]?.start??Infinity;const context=cues.filter(c=>c[1]>Math.max(scene.start,t-35)&&c[0]<Math.min(end,t+20)).map(c=>c[2]).join(' ').slice(0,1800);const q=['אני לומד בקורס היסטוריה עולמית של פרופ׳ יובל נח הררי.','הרצאה: '+(lesson?.title||$('lessons').selectedOptions[0]?.textContent||''),'נושא: '+scene.title,'זמן בהרצאה: '+formatAudioTime(t),context?'הקשר מתוך תמלול ההרצאה (ייתכנו שגיאות תמלול): '+context:'','הסבר בעברית פשוטה ומעמיקה את הנושא בהקשר ההיסטורי של הקורס, תולדות בני האדם, האבולוציה והחברות האנושיות, בהתאם לתוכן ההרצאה. פרש מונחים דו-משמעיים לפי ההקשר ולא לפי הכותרת לבדה. אם מדובר בתאוריית המיזוג בהקשר של מיני אדם, הסבר את ההכלאה בין אוכלוסיות ומיני אדם קדומים ולא מיזוג כוכבים. אם הנושא עוסק ביקום או בכדור הארץ, הסבר אותו בהקשר המתאים להתפתחות החיים והאדם. הבחן בין עובדות, השערות וידע מחקרי עדכני.'].filter(Boolean).join('\n');window.open('https://chatgpt.com/?q='+encodeURIComponent(q),'_blank','noopener,noreferrer');};
 const slideImage = $('slideImage');
 const slideBox = $('extraPicture');
 let slideUrls = [];
@@ -72,38 +83,50 @@ function browseSlides(direction) {
   showSlide((current + direction + slideUrls.length) % slideUrls.length);
 }
 
-let swipeStart;
-slideBox.addEventListener('pointerdown', event => {
-  if (event.pointerType !== 'touch' || !event.isPrimary) return;
-  swipeStart = {id: event.pointerId, x: event.clientX, y: event.clientY};
-  slideBox.setPointerCapture(event.pointerId);
+function bindVerticalCarousel(box, canBrowse, browse) {
+  let swipeStart;
+  box.addEventListener('pointerdown', event => {
+    if (!canBrowse()) return;
+    if (event.pointerType !== 'touch' || !event.isPrimary) return;
+    swipeStart = {id: event.pointerId, x: event.clientX, y: event.clientY};
+    box.setPointerCapture(event.pointerId);
+  });
+  box.addEventListener('pointercancel', event => {
+    if (swipeStart?.id === event.pointerId) swipeStart = undefined;
+  });
+  box.addEventListener('pointerup', event => {
+    if (swipeStart?.id !== event.pointerId) return;
+    const deltaY = event.clientY - swipeStart.y;
+    const deltaX = event.clientX - swipeStart.x;
+    swipeStart = undefined;
+    if (Math.abs(deltaY) >= 30 && Math.abs(deltaY) > Math.abs(deltaX)) {
+      browse(Math.sign(deltaY));
+    }
+  });
+  box.addEventListener('keydown', event => {
+    if (!canBrowse()) return;
+    if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
+    event.preventDefault();
+    browse(event.key === 'ArrowDown' ? 1 : -1);
+  });
+  let lastWheel = -Infinity;
+  box.addEventListener('wheel', event => {
+    if (event.ctrlKey || !canBrowse() || Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
+    event.preventDefault();
+    const now = performance.now();
+    const idle = now - lastWheel;
+    lastWheel = now;
+    if (idle >= 180) browse(Math.sign(event.deltaY));
+  }, {passive: false});
+  return () => { swipeStart = undefined; };
+}
+
+const resetSlideSwipe = bindVerticalCarousel(slideBox, () => slideUrls.length > 1, browseSlides);
+const resetPictureSwipe = bindVerticalCarousel($('picture'), () => scenes.length > 1, direction => {
+  const next = (Math.max(0, displayedPicture) + direction + scenes.length) % scenes.length;
+  showPicture(next);
 });
-slideBox.addEventListener('pointercancel', event => {
-  if (swipeStart?.id === event.pointerId) swipeStart = undefined;
-});
-slideBox.addEventListener('pointerup', event => {
-  if (swipeStart?.id !== event.pointerId) return;
-  const deltaY = event.clientY - swipeStart.y;
-  const deltaX = event.clientX - swipeStart.x;
-  swipeStart = undefined;
-  if (Math.abs(deltaY) >= 30 && Math.abs(deltaY) > Math.abs(deltaX)) {
-    browseSlides(Math.sign(deltaY));
-  }
-});
-slideBox.addEventListener('keydown', event => {
-  if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return;
-  event.preventDefault();
-  browseSlides(event.key === 'ArrowDown' ? 1 : -1);
-});
-let lastWheel = -Infinity;
-slideBox.addEventListener('wheel', event => {
-  if (event.ctrlKey || slideUrls.length < 2 || Math.abs(event.deltaY) <= Math.abs(event.deltaX)) return;
-  event.preventDefault();
-  const now = performance.now();
-  const idle = now - lastWheel;
-  lastWheel = now;
-  if (idle >= 180) browseSlides(Math.sign(event.deltaY));
-}, {passive: false});
+
 for (const event of ['loadedmetadata', 'durationchange', 'timeupdate', 'seeked']) {
   a.addEventListener(event, updateSlide);
 }
@@ -136,7 +159,9 @@ slideRequest?.abort();
 slideUrls = [];
 displayedSlide = -1;
 audioSlide = -1;
-swipeStart = undefined;
+resetSlideSwipe();
+resetPictureSwipe();
+displayedPicture = -1;
 slideImage.hidden = true;
 slideImage.removeAttribute('src');
 showMenu(false);$('quickTopics').hidden=true;$('quickTopics').replaceChildren();$('lessons').disabled=true;a.pause();scenes=[];cues=[];current=-1;$('menu').replaceChildren();$('pic').hidden=true;$('sub').textContent='';$('subNext').textContent='';$('title').textContent='';$('placeholder').textContent='';$('lectureCounter').textContent=(i+1)+' / 28';$('lessons').value=i;$('lectureList').querySelectorAll('button').forEach((b,j)=>b.classList.toggle('active',j===i));base=l.folder;$('status').textContent='טוען הרצאה…';try{window.lessonScenes=null;window.lessonCues=null;await loadScript(base+'scenes.js');await loadScript(base+'subtitles.js');scenes=window.lessonScenes;cues=window.lessonCues;if(i===0&&Array.isArray(scenes)&&scenes.length&&scenes[0].start===0){scenes=[{id:'harari-opening',start:0,title:'יובל נח הררי וספריו',image:'images/harari-opening.webp'}, {...scenes[0],start:3},...scenes.slice(1)];}if(!Array.isArray(scenes)||!scenes.length||!Array.isArray(cues))throw Error('invalid data');a.src=base+'lesson.opus';a.load();loadSlides(base);scenes.forEach((s,i)=>{const b=document.createElement('button');b.dataset.index=i;b.textContent=String(Math.floor(s.start/60)).padStart(2,'0')+':'+String(Math.floor(s.start%60)).padStart(2,'0')+' — '+s.title;$('menu').append(b)});if(i===0){for(const id of ["lecture-01-01","lecture-01-02","lecture-01-03"]){const j=scenes.findIndex(s=>s.id===id);if(j<0)continue;const s=scenes[j],b=document.createElement('button'),stamp=document.createElement('span');b.textContent=s.title;stamp.textContent=String(Math.floor(s.start/60)).padStart(2,'0')+':'+String(Math.floor(s.start%60)).padStart(2,'0');b.onclick=()=>{go(j);$('quickTopics').hidden=true;a.play().catch(()=>{});};$('quickTopics').append(b)}$('quickTopics').hidden=false;}$('status').textContent='';render()}catch(e){$('status').textContent='שגיאה בטעינת קובצי ההרצאה: '+e.message}finally{$('lessons').disabled=false}}
